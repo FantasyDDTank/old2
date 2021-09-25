@@ -621,13 +621,13 @@ main, summary, details {
 }
 
 .main .main-module .section-content .wrapper .wrapper-box .box button#two.active ~ .segmentnav-selection-background {
-    width: 90px;
+    width: 96px;
     transform: translateX(calc(90px + 8px));
 }
 
 .main .main-module .section-content .wrapper .wrapper-box .box button#three.active ~ .segmentnav-selection-background {
-    width: 90px;
-    transform: translateX(calc(180px + 16px));
+    width: 104px;
+    transform: translateX(calc(186px + 16px));
 }
 
 /* 战力赛 */
@@ -708,6 +708,10 @@ main, summary, details {
     font-weight: bold;
 }
 
+.main .main-module .section-content .links-content .small-container .container .content{
+    overflow: hidden;
+}
+
 .main .main-module .section-content .links-content .small-container .container .content a{
     display: inline;
 }
@@ -717,6 +721,19 @@ main, summary, details {
     font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
     line-height: 26px;
     font-weight: 500;
+}
+
+.main .main-module .section-content .links-content .small-container .container .content img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 734px){
+    .main .main-module .section-content .links-content .small-container .container .content{
+        overflow: auto;
+    }
+    .main .main-module .section-content .links-content .small-container .container .content img{
+        width: auto;
+    }
 }
 
 /* 基础篇 */
