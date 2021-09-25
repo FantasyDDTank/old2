@@ -429,7 +429,7 @@ main, summary, details {
 }
 
 .main .ribbon-copy {
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     padding: 12px 0;
     color: #fff;
@@ -705,6 +705,14 @@ main, summary, details {
     font-weight: 500;
 }
 
+.main .main-module .section-content .links-content .small-container .container .content .ATT{
+    font-size: 15px;
+    font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
+    line-height: 25px;
+    font-weight: 500;
+    color: #e01962;
+}
+
 .main .main-module .section-content .links-content .information{
     width: calc(100% - 2px);
     height: auto;
@@ -727,6 +735,14 @@ main, summary, details {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.main .main-module .section-content .links-content .information .container .content .ATT{
+    font-size: 16px;
+    font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
+    line-height: 25px;
+    font-weight: 500;
+    color: #e01962;
 }
 
 /* 脚本篇 */
