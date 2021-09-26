@@ -621,13 +621,13 @@ main, summary, details {
 }
 
 .main .main-module .section-content .wrapper .wrapper-box .box button#two.active ~ .segmentnav-selection-background {
-    width: 96px;
+    width: 90px;
     transform: translateX(calc(90px + 8px));
 }
 
 .main .main-module .section-content .wrapper .wrapper-box .box button#three.active ~ .segmentnav-selection-background {
-    width: 104px;
-    transform: translateX(calc(186px + 16px));
+    width: 90px;
+    transform: translateX(calc(180px + 16px));
 }
 
 /* 战力赛 */
