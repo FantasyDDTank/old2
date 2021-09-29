@@ -18,10 +18,6 @@ a {
     text-decoration: none;
 }
 
-a.goog-logo-link{
-    display: inline-block;
-}
-
 /* Header */
 header {
     position: absolute;
@@ -290,7 +286,7 @@ header {
         height: 0;
         transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
         display: block;
-        z-index: 1500;
+        z-index: 4;
         top: 60px;
         right: 0;
         left: 0;
@@ -315,7 +311,6 @@ header {
         text-decoration: none;
         white-space: nowrap;
         font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
-        z-index: 1600;
     }
 
     .notice-box:after {
@@ -346,13 +341,6 @@ header {
         font-weight: 400;
         color: #4c4b4d;
         overflow: none;
-        z-index: 1500;
-    }
-
-    .notice-box .notice p a{
-        text-decoration: none;
-        color: #4c4b4d;
-        z-index: 1500;
     }
 
     .active .notice-box {
@@ -642,7 +630,7 @@ main, summary, details {
     transform: translateX(calc(180px + 16px));
 }
 
-/* 入门篇 */
+/* 副本掉落 */
 .main .main-module .section-content .links-content {
     width: 100%;
     height: auto;
@@ -699,42 +687,15 @@ main, summary, details {
 
 .main .main-module .section-content .links-content .small-container .container .content a{
     display: inline;
-    text-decoration: underline;
 }
 
 .main .main-module .section-content .links-content .small-container .container .content .notice{
-    font-size: 15px;
+    font-size: 16px;
     font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
-    line-height: 25px;
+    line-height: 26px;
     font-weight: 500;
-    color: grey;
 }
 
-.main .main-module .section-content .links-content .small-container .container .content .NTC{
-    font-size: 15px;
-    font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
-    line-height: 25px;
-    font-weight: 500;
-    color: #1962e0;
-}
-
-.main .main-module .section-content .links-content .small-container .container .content .ATT{
-    font-size: 15px;
-    font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
-    line-height: 25px;
-    font-weight: 500;
-    color: #e01962;
-}
-
-.main .main-module .section-content .links-content .small-container .container .content .JY{
-    font-size: 15px;
-    font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
-    line-height: 25px;
-    font-weight: 500;
-    color: #1c750e;
-}
-
-/* 基础篇 */
 .main .main-module .section-content .links-content .information{
     width: calc(100% - 2px);
     height: auto;
@@ -750,196 +711,34 @@ main, summary, details {
     text-align: center;
 }
 
-.main .main-module .section-content .links-content .small-container .container .main-title:after{
-    content: '+';
-    float: right;
-    font-size: 20px;
-    font-weight: normal;
-    margin-top: -2px;
-    margin-right: 8px;
-    -webkit-transition: -webkit-transform .3s ease;
-    transition: -webkit-transform .3s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease, -webkit-transform .3s ease;
-}
 
-.rotateicon .main-title:after{
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    animation: transform .3s ease;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-0{
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
-    z-index: -1;
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-    height: 100px;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-0.show-0 {
-    position: static;
-    visibility: visible;
-    z-index: 1;
-    -webkit-transform: none;
-    transform: none;
-    -webkit-transition: -webkit-transform 300ms ease;
-    transition: -webkit-transform 300ms ease;
-    transition: transform 300ms ease;
-    transition: transform 300ms ease, -webkit-transform 300ms ease;
-    margin: 0;
-    overflow: hidden;
-    top: 100%;
-    left: 0;
+.main .main-module .section-content .links-content .search-container{
     width: 100%;
     height: auto;
+    position: relative;
+    margin: 20px 0;
 }
 
-.main .main-module .section-content .links-content .small-container .container #content-1{
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
-    z-index: -1;
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-    height: 100px;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-1.show-1 {
-    position: static;
-    visibility: visible;
-    z-index: 1;
-    -webkit-transform: none;
-    transform: none;
-    -webkit-transition: -webkit-transform 300ms ease;
-    transition: -webkit-transform 300ms ease;
-    transition: transform 300ms ease;
-    transition: transform 300ms ease, -webkit-transform 300ms ease;
-    margin: 0;
-    overflow: hidden;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-2{
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
-    z-index: -1;
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-    height: 100px;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-2.show-2 {
-    position: static;
-    visibility: visible;
-    z-index: 1;
-    -webkit-transform: none;
-    transform: none;
-    -webkit-transition: -webkit-transform 300ms ease;
-    transition: -webkit-transform 300ms ease;
-    transition: transform 300ms ease;
-    transition: transform 300ms ease, -webkit-transform 300ms ease;
-    margin: 0;
-    overflow: hidden;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-3{
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
-    z-index: -1;
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-    height: 100px;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-3.show-3 {
-    position: static;
-    visibility: visible;
-    z-index: 1;
-    -webkit-transform: none;
-    transform: none;
-    -webkit-transition: -webkit-transform 300ms ease;
-    transition: -webkit-transform 300ms ease;
-    transition: transform 300ms ease;
-    transition: transform 300ms ease, -webkit-transform 300ms ease;
-    margin: 0;
-    overflow: hidden;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-4{
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
-    z-index: -1;
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-    height: 100px;
-}
-
-.main .main-module .section-content .links-content .small-container .container #content-4.show-4 {
-    position: static;
-    visibility: visible;
-    z-index: 1;
-    -webkit-transform: none;
-    transform: none;
-    -webkit-transition: -webkit-transform 300ms ease;
-    transition: -webkit-transform 300ms ease;
-    transition: transform 300ms ease;
-    transition: transform 300ms ease, -webkit-transform 300ms ease;
-    margin: 0;
-    overflow: hidden;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-.main .main-module .section-content .links-content .small-container .container .content ul{
-    margin-left: 20px;
-}
-
-.main .main-module .section-content .links-content .small-container .container .content ul .sub-title{
+.main .main-module .section-content .links-content .search-container #myInput{
+    width: calc(100% - 40px);
+    font-size: 18px;
+    padding: 12px 20px;
+    background-color: #fff;
+    border: none;
+    text-align: center;
+    font-family: "FangSong","KaiTi","Helvetica","Arial",sans-serif;
+    line-height: 28px;
     font-weight: bold;
+    color: grey;
+    border-radius: 30px;
 }
 
-.main .main-module .section-content .links-content .small-container .container .content ul .sub-content{
-    list-style-type: none;
+.main .main-module .section-content .links-content .small-container .container .title .n-s{
+    background-color: red;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 6px;
 }
-
