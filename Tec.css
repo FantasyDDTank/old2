@@ -684,6 +684,25 @@ main, summary, details {
     font-weight: bold;
 }
 
+.main .main-module .section-content .basic-content .small-container .container .image-content{
+    overflow: hidden;
+}
+
+.main .main-module .section-content .basic-content .small-container .container .image-content img{
+    width: 100%;
+    display: block;
+
+}
+
+@media only screen and (max-width: 734px){
+    .main .main-module .section-content .basic-content .small-container .container .image-content{
+        overflow: auto;
+    }
+    .main .main-module .section-content .basic-content .small-container .container .image-content img{
+        width: auto;
+    }
+}
+
 .main .main-module .section-content .links-content .small-container{
     width: 100%;
     height: auto;
@@ -723,18 +742,6 @@ main, summary, details {
     font-weight: 500;
 }
 
-.main .main-module .section-content .links-content .small-container .container .content img{
-    width: 100%;
-}
-
-@media only screen and (max-width: 734px){
-    .main .main-module .section-content .links-content .small-container .container .content{
-        overflow: auto;
-    }
-    .main .main-module .section-content .links-content .small-container .container .content img{
-        width: auto;
-    }
-}
 
 /* 基础篇 */
 .main .main-module .section-content .links-content .information{
